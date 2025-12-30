@@ -1,6 +1,5 @@
 import { Input } from "./styles";
 
-import React from "react";
 
 type SearchBarProps = {
   value: string;

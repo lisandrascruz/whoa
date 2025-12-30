@@ -1,3 +1,4 @@
-import SearchBar from "./SearchBar/SearchBar";
+import SearchBar from "./SearchBar/searchBar";
+import Card from "./Card/card";
 
-export { SearchBar };
+export { SearchBar, Card };

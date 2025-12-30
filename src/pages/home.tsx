@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { SearchBar } from "../components";
-import { ContentArea, HeaderArea, Wrapper } from "./styles";
+import { Card, SearchBar } from "../components";
+import { ContentArea, HeaderArea, List, Wrapper } from "./styles";
 import logo from "../assets/logo.png";
+import productsJson from "../products_data.json";
 
-const products = ["Arroz", "Feijão", "Macarrão"];
 
 const Home: React.FC = () => {
   const [search, setSearch] = useState("");
 
+  const products = productsJson.products;
+
   const filteredProducts = products.filter((product) =>
-    product.toLowerCase().startsWith(search.toLowerCase()),
+    product.name.toLowerCase().startsWith(search.toLowerCase()),
   );
 
   return (
@@ -20,11 +22,11 @@ const Home: React.FC = () => {
       </HeaderArea>
 
       <ContentArea>
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+        <List>
           {filteredProducts.map((product, index) => (
-            <li key={index}>{product}</li>
+            <Card key={index} product={product} />
           ))}
-        </ul>
+        </List>
       </ContentArea>
     </Wrapper>
   );

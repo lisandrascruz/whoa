@@ -1,0 +1,48 @@
+{
+    "products": [
+        {
+            "name": "Arroz",
+            "price": 10.58
+        },
+        {
+            "name": "Feijão",
+            "price": 8
+        },
+        {
+            "name": "Macarrão",
+            "price": 5
+        },
+        {
+            "name": "Coentro",
+            "price": 2.87
+        },
+        {
+            "name": "Tomate",
+            "price": 0.99
+        },
+        {
+            "name": "Pepino",
+            "price": 3.49
+        },
+        {
+            "name": "Alface",
+            "price": 1.5
+        },
+        {
+            "name": "Batata",
+            "price": 4.2
+        },
+        {
+            "name": "Queijo",
+            "price": 18.4
+        },
+        {
+            "name": "Ovos",
+            "price": 12.0
+        },
+        {
+            "name": "Pão",
+            "price": 6.5
+        }
+    ]
+}

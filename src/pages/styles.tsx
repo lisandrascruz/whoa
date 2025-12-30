@@ -23,3 +23,12 @@ export const HeaderArea = styled.div`
 export const ContentArea = styled.div`
   grid-area: content;
 `;
+
+export const List = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 16px;
+`;
